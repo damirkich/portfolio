@@ -1,31 +1,32 @@
 .aboutme {
     width: 100%;
     height: auto;
-    margin-top: 50px;
-    margin-left: 100px;
 
     &__titlepage {
         font-size: 40px;
         font-weight: 700;
         color: white;
-        text-align: left;
+        text-align: center;
         margin-top: 100px;
     }
 
     &__parapage {
+        content: '';
+        position: relative;
         font-size: 25px;
         font-weight: 400;
         color: white;
-        text-align: left;
+        text-align: center;
         margin-top: 20px;
         width: 60%;
+        left: 280px;
     }
 
     &__subtitlepage {
         font-size: 30px;
         font-weight: 700;
         color: white;
-        text-align: left;
+        text-align: center;
         margin-top: 20px;
     }
 
