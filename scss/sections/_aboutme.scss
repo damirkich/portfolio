@@ -31,5 +31,11 @@
         padding: 13px;
         border: none;
         border-radius: 5px;
+        transition: 0.3s ease;
+
+        &:hover {
+            background-color: darken($first-color, 10%);
+            transform: scale(1.05);
+        }
     }
 }
