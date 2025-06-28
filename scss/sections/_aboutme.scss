@@ -1,0 +1,35 @@
+.aboutme__section {
+    height: 400px;
+
+    &--title {
+        font-size: 40px;
+        font-weight: 700;
+        color: white;
+        text-align: center;
+        margin-top: 50px;
+    }
+
+    &--description {
+        font-size: 30px;
+        font-weight: 400;
+        color: white;
+        text-align: center;
+        margin-top: 20px;
+        width: 60%;
+        margin: auto;
+    }
+
+    &--btn {
+        content: '';
+        position: relative;
+        color: white;
+        background-color: $first-color;
+        font-size: 30px;
+        font-weight: 600;
+        bottom: -50px;
+        left: 37%;
+        padding: 13px;
+        border: none;
+        border-radius: 5px;
+    }
+}
