@@ -1,0 +1,64 @@
+.footer {
+    width: 100%;
+    background-color: $first-color;
+    height: 140px;
+
+    &__text {
+        content: '';
+        position: relative;
+        font-size: 20px;
+        font-weight: 400;
+        color: white;
+        text-align: left;
+        padding: 20px 0;
+        top: 40px;
+        left: 10px;
+    }
+
+    &__socials {
+        content: '';
+        position: relative;
+        display: flex;
+        justify-content: right;
+        align-items: center;
+        height: 100%;
+        bottom: 40px
+    }
+
+    &__socials--icon-discord {
+        height: 50px;
+        color: white;
+        margin-right: 20px;
+        transition: 0.3s ease;
+
+        &:hover {
+            color: darken($first-color, 10%);
+            transform: scale(1.1);
+        }
+
+    }
+
+        &__socials--icon-instagram {
+        height: 50px;
+        color: white;
+        margin-right: 20px;
+        transition: 0.3s ease;
+
+        &:hover {
+            color: darken($first-color, 10%);
+            transform: scale(1.1);
+        }
+    }
+
+        &__socials--icon-github {
+        height: 50px;
+        color: white;
+        margin-right: 20px;
+        transition: 0.3s ease;
+
+        &:hover {
+            fill: blue;
+            transform: scale(1.1);
+        }
+    }
+}
