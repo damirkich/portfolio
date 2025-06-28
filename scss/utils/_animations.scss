@@ -42,3 +42,57 @@
         transform: scale(1);
     }
 }
+
+@keyframes portfanim {
+    0% {
+        background-color: #a5d1ef;
+    }
+
+    33% {
+        background-color: #6a9fca;
+    }
+
+    66% {
+        background-color: #467691;
+    }
+
+    100% {
+        background-color: #a5d1ef;
+    }
+}
+
+@keyframes bakeranim {
+    0% {
+        background-color: #f0c27b;
+    }
+
+    33% {
+        background-color: #8d784a;
+    }
+
+    66% {
+        background-color: #a57818;
+    }
+
+    100% {
+        background-color: #f0c27b;
+    }
+}
+
+@keyframes minanim {
+    0% {
+        background-color: #60747c;
+    }
+
+    33% {
+        background-color: #3b4c54;
+    }
+
+    66% {
+        background-color: #718895;
+    }
+
+    100% {
+        background-color: #60747c;
+    }
+}

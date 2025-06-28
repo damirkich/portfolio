@@ -7,6 +7,7 @@
   right: 0;
   bottom: 0;
   transition: 1.5s;
+  width: 100%;
 }
 
 
@@ -31,7 +32,7 @@
 }
 
 .modal-close {
-  font-weight: 500;
+  font-weight: 600;
   font-size: 18px;
   color: #fff;
   background-color: red;
@@ -58,7 +59,7 @@
 .modal-btn {
   content: '';
   position: relative;
-  font-weight: 500;
+  font-weight: 600;
   font-size: 18px;
   color: #fff;
   background-color: limegreen;
@@ -75,6 +76,8 @@
   font-size: 20px;
   color: #333;
   margin-bottom: 20px;
+  font-weight: 700;
+  text-align: center;
 }
 
 .modal-btn:hover {
@@ -95,6 +98,7 @@
     top: 0;
     left: 0;
     right: 0;
+    width: 100%;
     bottom: 0;
     background: rgba(0,0,0,0.5);
     display: flex;
@@ -105,6 +109,7 @@
 
 .backdrop.is-hidden {
     display: none;
+    width: 100%;
 }
 
 .modal {

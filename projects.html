@@ -6,6 +6,11 @@
     <title>My Projects</title>
 
     <link rel="stylesheet" href="./css/style.min.css">
+    <style>
+body{
+overflow-x: none;
+}
+</style>
 </head>
 <body>
         <header class="header">
@@ -30,11 +35,54 @@
             <p class="myprojects__section--description">Here are some of the projects I have worked on. Click on the links to view them.</p>
 
             <ul class="myprojects__section--list">
-                <li class="myprojects__section--item">WebStudio</li>
-                <li class="myprojects__section--item">Food Store</li>
-                <li class="myprojects__section--item">Furniture Store</li>               
+                <li class="myprojects__section--item portfolio">
+                    <h2 class="myprojects__section--subtitle"><a href="https://damirkich.github.io/portfolio">My Portfolio</a></h2>
+                    <p class="myprojects__section--paragraph">My second <strong>personal</strong> project, you are on it right now, so you can see what it looks like.</p>
+                </li>
+                <li class="myprojects__section--item bakery">
+                    <h2 class="myprojects__section--subtitle"><a href="https://damirkich.github.io/Bakery">Food Store</a></h2>
+                    <p class="myprojects__section--paragraph">One of the templates i have been learning CSS on. Currently not done till the very end (permanently).</p>
+                </li>
+                <li class="myprojects__section--item minimal">
+                    <h2 class="myprojects__section--subtitle"><a href="https://damirkich.github.io/Project_Chaban">Minimal</a></h2>
+                    <p class="myprojects__section--paragraph">My first project, that i have done by myself. Even though its template was made by a random desginer, my frontend teacher gave me it.</p>
+                </li>               
                 </ul>
+
+                <h2 class="myprojects__section--comingsoon">More projects coming soon...</h2>
         </section>
     </main>
+
+        <footer class="footer">
+        <div class="footer-wrapper">
+            <p class="footer__text">© 2025 Damir Chaban · With passion.</p>
+            <ul class="footer__socials">
+                <li class="footer__socials--item"><a href="https://github.com/damirkich"><img src="./img/github-mark.svg" alt="GitHub" class="footer__socials--icon-github"></a>
+                </li>
+                <li class="footer__socials--item"><a href="https://discord.com/users/874955311226691604"><img src="./img/discord-icon-svgrepo-com.svg" alt="Discord" class="footer__socials--icon-discord"></a>
+                </li>
+                <li class="footer__socials--item"><a href="https://instagram.com/damirkich"><img src="./img/instagram-svgrepo-com (1).svg" alt="Instagram" class="footer__socials--icon-instagram"></a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+
+           <div class="backdrop is-hidden">
+      <div class="modal">
+
+        <h3 class="modal-title">Hold up!</h3>
+
+        <p class="modal-desc">You are about to leave this site, and visit a google form!
+          Are you sure you want to continue?</p>
+        </p>
+        <button class="modal-close">No, take me back</button>
+<button type="button" class="modal-btn" onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLSdObkJsdVSsHSgnPA4qi99AVy_VXjIqvVT4R_QxAf-X_tQfNw/viewform?usp=dialog', '_blank')">
+  Yes, I'm sure
+</button>
+  
+      </div>
+    </div>
+    <script src="./js/script.js"></script>
+    <script src="https://kit.fontawesome.com/945cbc1d36.js" crossorigin="anonymous"></script>
 </body>
 </html>

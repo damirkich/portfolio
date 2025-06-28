@@ -6,6 +6,11 @@
     <title>About me</title>
 
     <link rel="stylesheet" href="./css/style.min.css">
+    <style>
+body{
+overflow-x: none;
+}
+</style>
 </head>
 <body>
      <header class="header">
@@ -67,5 +72,23 @@
             </ul>
         </div>
     </footer>
+
+           <div class="backdrop is-hidden">
+      <div class="modal">
+
+        <h3 class="modal-title">Hold up!</h3>
+
+        <p class="modal-desc">You are about to leave this site, and visit a google form!
+          Are you sure you want to continue?</p>
+        </p>
+        <button class="modal-close">No, take me back</button>
+<button type="button" class="modal-btn" onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLSdObkJsdVSsHSgnPA4qi99AVy_VXjIqvVT4R_QxAf-X_tQfNw/viewform?usp=dialog', '_blank')">
+  Yes, I'm sure
+</button>
+  
+      </div>
+    </div>
+    <script src="./js/script.js"></script>
+    <script src="https://kit.fontawesome.com/945cbc1d36.js" crossorigin="anonymous"></script>
 </body>
 </html>
