@@ -1,18 +1,21 @@
-const btnsOpenModal = document.querySelectorAll('[data-open-modal]')
-const backdrop = document.querySelector('.backdrop')
-const btnCloseModal = document.querySelector('.modal-close')
-const modal = document.querySelector('.modal')
+document.addEventListener('DOMContentLoaded', function() {
+    const btnsOpenModal = document.querySelectorAll('[data-open-modal]');
+    const backdrop = document.querySelector('.backdrop');
+    const modal = document.querySelector('.modal');
+    
+    console.log("Elements:", {btnsOpenModal, backdrop, modal}); // Debug line
 
-btnsOpenModal.forEach((btn) => {
-    btn.addEventListener('click', () => {
-        backdrop.classList.remove('is-hidden')
-        document.body.style.overflow = 'hidden'
-        modal.classList.add('rotate')
-    })
-})
+    btnsOpenModal.forEach(btn => {
+        btn.addEventListener('click', function(e) {
+            e.preventDefault();
+            console.log("Button clicked - removing is-hidden");
+            backdrop.classList.remove('is-hidden');
+            document.body.style.overflow = 'hidden';
+        });
+    });
 
-btnCloseModal.addEventListener('click', () => {
-    backdrop.classList.add('is-hidden')
-    document.body.style.overflow = 'auto'
-    modal.classList.remove('rotate')
-})
+    document.querySelector('.modal-close').addEventListener('click', function() {
+        backdrop.classList.add('is-hidden');
+        document.body.style.overflow = 'auto';
+    });
+});

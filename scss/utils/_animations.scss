@@ -25,3 +25,20 @@
         transform:rotateX('30deg')
     }
 }
+
+@keyframes modalan {
+    0% {
+        color: $first-color;
+        transform: scale(1);
+    }
+
+    50% {
+        color: limegreen;
+        transform: scale(1.1);
+    }
+
+    100% {
+        color: $first-color;
+        transform: scale(1);
+    }
+}

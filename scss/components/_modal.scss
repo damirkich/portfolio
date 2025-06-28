@@ -23,91 +23,88 @@
   transform: translate(-50%, -50%);
 }
 
-.modal-close {
-  border: 1px solid #fafafa;
-  border-radius: 50%;
-  background-color: transparent;
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  width: 30px;
-  height: 30px;
-  cursor: pointer;
-}
-
-.modal-close .fa-xmark {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
 .modal-close:hover {
-  color: orange;
-  border: 1px solid orange;
+  color: red;
+  border: 1px solid red;
   transition: 0.5s;
+  background-color: transparent;
+}
+
+.modal-close {
+  font-weight: 500;
+  font-size: 18px;
+  color: #fff;
+  background-color: red;
+  border-radius: 5px;
+  border: none;
+  height: 40px;
+  cursor: pointer;
+    transition: 1s;
 }
 
 .modal-title {
-  font-size: 16px;
-  color: orange;
+  font-size: 30px;
+  color: red;
   margin: 0;
+  text-align: center;
+  animation: modalan 3s ease-in-out infinite;
 }
 
 .modal-form label {
   font-size: 14px;
 }
 
-.modal-form input {
-  padding: 4px 8px;
-  border: 1px solid lightgray;
-  border-radius: 10px;
-  outline: none;
-}
-
-.modal-field {
-  display: flex;
-  flex-direction: column;
-  gap: 4px;
-  width: 100%;
-}
-
-.modal-form {
-  margin-top:  17px;
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-}
-
-.modal-form textarea {
-  resize: none;
-  padding: 8px 16px;
-  height: 100px;
-  border: 1px solid lightgray;
-  border-radius: 10px;
-  outline: none;
-}
 
 .modal-btn {
+  content: '';
+  position: relative;
   font-weight: 500;
   font-size: 18px;
   color: #fff;
-  background-color: orange;
+  background-color: limegreen;
   border-radius: 5px;
   border: none;
   height: 40px;
   cursor: pointer;
+  width: 150px;
+  left: 100px;
+  transition: 1s;
 }
 
 .modal-btn:hover {
   background-color: transparent;
-  color: orange;
-  border: 1px solid orange;
-  transition: 0.5s;
+  color: limegreen;
+  border: 1px solid limegreen;
+
 }
 
 .is-hidden {
   opacity: 0;
   pointer-events: none;
   visibility: hidden;
+}
+
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.backdrop.is-hidden {
+    display: none;
+}
+
+.modal {
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    width: 90%;
+    max-width: 500px;
 }
