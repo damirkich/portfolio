@@ -1,0 +1,15 @@
+@keyframes heroanimation {
+    0% {
+        background-color: $first-color;
+    }
+    33% {
+        background-color: rgb(56, 66, 160);
+    }
+    66% {
+        background-color: rgb(47, 114, 240);
+    }
+
+    99% {
+        background-color: $first-color;
+    }
+}
