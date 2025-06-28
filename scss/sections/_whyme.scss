@@ -1,5 +1,5 @@
 .whyme__section {
-    height: 500px;
+    height: 400px;
     width: 100%;
 
         &--title {
@@ -12,6 +12,7 @@
         }
 
         &--item {
+            margin-top: 50px;
             border-radius: 20px;
             background-color: $first-color;
             width: 250px;
