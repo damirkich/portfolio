@@ -1,7 +1,7 @@
 .footer {
     width: 100%;
     background-color: $first-color;
-    height: 140px;
+    height: fit-content;
 
     &__text {
         content: '';
@@ -22,7 +22,7 @@
         justify-content: right;
         align-items: center;
         height: 100%;
-        bottom: 40px
+        bottom: 60px
     }
 
     &__socials--icon-discord {

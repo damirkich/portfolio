@@ -6,3 +6,22 @@
     padding: 1px;
 }
 
+.footer-text-wrap {
+        font-size: 20px;
+        font-weight: 400;
+        color: white;
+        
+}
+
+.footer-wrapper {
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    .footer-text-wrap {
+        display: flex;
+        flex-direction: column;
+    }
+}

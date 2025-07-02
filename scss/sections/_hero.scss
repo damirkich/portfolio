@@ -34,3 +34,9 @@
         margin-right: auto;
     }
 }
+
+@media (max-width: 768px) {
+    .hero__section {
+        height: 480px;
+    }
+}

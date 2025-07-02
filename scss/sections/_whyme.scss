@@ -1,5 +1,5 @@
 .whyme__section {
-    height: 400px;
+    height: fit-content;
     width: 100%;
 
         &--title {
@@ -48,4 +48,10 @@
             gap: 40px;
             margin-top: 20px;
         }
+}
+
+@media (max-width: 768px) {
+    .whyme__section {
+        
+    }
 }
