@@ -1,6 +1,6 @@
 .aboutme {
     width: 100%;
-    height: auto;
+    height: 1000px;
 
     &__titlepage {
         font-size: 40px;
@@ -19,7 +19,7 @@
         text-align: center;
         margin-top: 20px;
         width: 60%;
-        left: 280px;
+        margin: 0 auto;
     }
 
     &__subtitlepage {
