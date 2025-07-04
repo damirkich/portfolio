@@ -22,7 +22,7 @@
         justify-content: right;
         align-items: center;
         height: 100%;
-        bottom: 30px
+        bottom: 75px;
     }
 
     &__socials--icon-discord {
@@ -65,6 +65,18 @@
 
 @media (max-width: 768px) {
   .footer {
-    
+    height: 180px;
+
+    &__text {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__socials {
+        flex-direction: column;
+        left: 200px;
+        top: -100px;
+        scale: 100px;
+    }   
   }
 }

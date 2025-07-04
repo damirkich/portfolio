@@ -13,15 +13,20 @@
         
 }
 
-.footer-wrapper {
-    align-items: center;
-    padding: 0;
-    margin: 0;
-}
+// .footer-wrapper {
+//     align-items: center;
+//     padding: 0;
+//     margin: 0;
+// }
 
 @media (max-width: 768px) {
     .footer-text-wrap {
         display: flex;
         flex-direction: column;
     }
+}
+
+.header__menu {
+    align-items: center;
+    display: flex;
 }
