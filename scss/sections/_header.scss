@@ -74,6 +74,7 @@
     padding: 10px;
     z-index: 1001;
 
+
     &--line {
     display: block;
     width: 35px;
@@ -97,7 +98,7 @@
 
         &__burger.active .header__burger--line {
             &:nth-child(1) {
-                transform: translateY(8px) rotate(45deg);
+                transform: translateY(10px) rotate(45deg);
             }
 
             &:nth-child(2) {
@@ -105,7 +106,7 @@
             }
 
             &:nth-child(3) {
-                transform: translateY(-8px) rotate(-45deg);
+                transform: translateY(-10px) rotate(-45deg);
             }
         }
 
@@ -128,9 +129,9 @@
         position: fixed;
         top: 0;
         right: -100%;
-        width: 70%;
+        width: 100%;
         height: 100vh;
-        background-color: #fff;
+        background-color: black;
         box-shadow: -2px 0 10px rgba(0,0,0,0.1);
         flex-direction: column;
         justify-content: center;
@@ -141,9 +142,18 @@
         &--link {
             white-space: nowrap;
         }
+
+        &--list {
+            gap: 60px;
+            margin-right: auto;
+            margin-left: auto;
+            margin-top: 300px
         }
+        }
+
+
         &__nav--item {
-            font-size: 20px;
+            font-size: 50px;
         }
 
 
