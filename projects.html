@@ -13,20 +13,25 @@ overflow-x: none;
 </style>
 </head>
 <body>
-        <header class="header">
+    <header class="header">
+        <a class="header__main-link" href="index.html">Damir Chaban</a>
+
+        <button class="header__burger" aria-label="Toggle menu">
+            <span class="header__burger--line"></span>
+            <span class="header__burger--line"></span>
+            <span class="header__burger--line"></span>
+        </button>
 
             <nav class="header__nav">
             <ul class="header__nav--list">
-                <a class="header__main-link" href="index.html">Damir Chaban</a>
                 <div class="header-wrapper"></div>
                 <li class="header__nav--item"><a class="header__nav--link" href="./projects.html">My Projects</a></li>
-                <li class="header__nav--item">
-  <a class="header__nav--link" href="#" data-open-modal>Contact me</a>
-</li>
+                <li class="header__nav--item"><a class="header__nav--link" href="#" data-open-modal>Contact me</a></li>
                 <li class="header__nav--item"><a class="header__nav--link" href="./aboutme.html">About me</a></li>
             </ul>
         </nav>
-        </div>
+
+ 
     </header>
 
     <main class="main">
@@ -54,7 +59,6 @@ overflow-x: none;
     </main>
 
 <footer class="footer">
-  <div class="footer-wrapper">
     <p class="footer__text">
       © 2025 Damir Chaban · <span class="quote">With passion.</span>
     </p>
@@ -75,7 +79,6 @@ overflow-x: none;
         </a>
       </li>
     </ul>
-  </div>
 </footer>
 
            <div class="backdrop is-hidden">

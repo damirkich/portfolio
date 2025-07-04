@@ -18,11 +18,19 @@
   left: 50%;
   background-color: white;
   padding: 24px;
-  transition: 1.5s;
   border-radius: 10px;
   width: 500px;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -150%);
+  opacity: 0;
+  transition: transform 1s ease, opacity 1s ease;
 }
+
+/* When active */
+.modal.show {
+  transform: translate(-50%, -50%);
+  opacity: 1;
+}
+
 
 .modal-close:hover {
   color: red;
@@ -118,4 +126,20 @@
     border-radius: 8px;
     width: 90%;
     max-width: 500px;
+
+    @media (max-width: 768px) {
+      display: flex;
+      flex-direction: column;
+      .modal-close {
+        order: 2;
+
+      }
+
+      .modal-btn {
+        // width: 290px;
+        width: 100%;
+        left: 1px;
+        margin-bottom: 20px;
+      }
+    }
 }
